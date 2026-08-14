@@ -1,0 +1,158 @@
+/* ============================================
+   BASE STYLES
+   ============================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #2b2b2b;
+  background-color: #faf7f2;
+  padding: 40px 20px;
+}
+
+/* ============================================
+   HEADINGS - Playfair Display
+   ============================================ */
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: #1a1a1a;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #d4a373;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* ============================================
+   SUBTITLE & PARAGRAPHS - Poppins
+   ============================================ */
+.subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+p {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+}
+
+strong {
+  font-weight: 600;
+  color: #a3651f;
+}
+
+em {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+/* ============================================
+   SECTIONS
+   ============================================ */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* ============================================
+   QUOTE
+   ============================================ */
+blockquote {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #4a4a4a;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-left: 4px solid #d4a373;
+}
+
+/* ============================================
+   IMAGE GALLERY & HOVER EFFECTS
+   ============================================ */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.img-wrapper {
+  width: 220px;
+}
+
+.img-wrapper img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, filter 0.4s ease;
+  cursor: pointer;
+}
+
+.caption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #666;
+  max-width: none;
+}
+
+/* Effect 1: Scale on hover */
+.img-wrapper img:hover {
+  transform: scale(1.1);
+}
+
+/* Effect 2: Rotate on hover */
+.rotate-effect img:hover {
+  transform: rotate(8deg) scale(1.05);
+}
+
+/* Effect 3: Grayscale to color on hover */
+.grayscale-effect img {
+  filter: grayscale(100%);
+}
+
+.grayscale-effect img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.85rem;
+  color: #999;
+}
