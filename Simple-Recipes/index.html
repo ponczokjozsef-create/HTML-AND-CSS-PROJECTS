@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Recipes — Easy, Everyday Cooking</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Karla:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="site-header">
+  <nav class="navbar">
+    <a href="#top" class="logo">Simple<span>Recipes</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#top">Home</a></li>
+      <li><a href="#recipes">Recipes</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO / FEATURED RECIPE -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Featured Recipe</p>
+        <h1>Deep Dish<br>Skillet Pizza</h1>
+        <p class="hero-copy">
+          Deep dish pizza has got a lot going for it: a thick crust that's tender
+          and chewy on the inside, but nicely crisped on the outside; a little
+          extra room for piling on the toppings; and, deep dish is less needy
+          than its thin crust style counterpart, which requires some care when
+          rolling and stretching. Here, you just push the dough into the skillet
+          and you're cooking. Save the leftovers for lunch!
+        </p>
+        <div class="tag-row">
+          <span class="tag">⏱ 30–40 min</span>
+          <span class="tag">Level: Medium</span>
+        </div>
+        <a href="#recipes" class="btn btn-primary">See All Recipes</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/skillet-pizza.jpeg" alt="Deep dish skillet pizza sliced, served with roasted broccoli">
+        <span class="pin" aria-hidden="true"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECIPES -->
+  <section class="recipes" id="recipes">
+    <div class="section-head">
+      <p class="eyebrow">The Recipe Box</p>
+      <h2>What's Cooking</h2>
+      <p class="section-sub">Everyday recipes, tested and true, filed by category like a well-loved card box.</p>
+    </div>
+
+    <div class="recipe-grid">
+
+      <article class="recipe-card">
+        <div class="card-image">
+          <img src="images/tortelloni.jpeg" alt="Saucy tortelloni parm baked in a skillet, served with a side salad">
+        </div>
+        <p class="card-eyebrow">Pasta</p>
+        <h3>Saucy Tortelloni Parm</h3>
+        <div class="card-meta">
+          <span>⏱ 20–30 min</span>
+          <span>Level: Easy</span>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="card-image">
+          <img src="images/chicken-thighs.jpeg" alt="Mediterranean chicken thighs plated with pita and cucumber feta salad">
+        </div>
+        <p class="card-eyebrow">Chicken</p>
+        <h3>Mediterranean Chicken Thighs</h3>
+        <div class="card-meta">
+          <span>⏱ 20–30 min</span>
+          <span>Level: Easy</span>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="card-image">
+          <img src="images/pork-katsu.jpeg" alt="Crispy pork katsu sliced over rice with bok choy and dipping sauce">
+        </div>
+        <p class="card-eyebrow">Pork</p>
+        <h3>Crispy Pork Katsu &amp; Rice</h3>
+        <div class="card-meta">
+          <span>⏱ 20–30 min</span>
+          <span>Level: Medium</span>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="card-image">
+          <img src="images/cheddar-biscuits.jpeg" alt="Cheddar cheese biscuit breakfast sandwiches with egg, bacon, and arugula">
+        </div>
+        <p class="card-eyebrow">Biscuits</p>
+        <h3>Cheddar Cheese Biscuits</h3>
+        <div class="card-meta">
+          <span>⏱ 40–50 min</span>
+          <span>Level: Medium</span>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="card-image">
+          <img src="images/baked-cod.jpeg" alt="Baked cod fillets with scalloped potatoes and salsa verde in a skillet">
+        </div>
+        <p class="card-eyebrow">Fish</p>
+        <h3>Baked Cod &amp; Scalloped Potatoes</h3>
+        <div class="card-meta">
+          <span>⏱ 30–40 min</span>
+          <span>Level: Easy</span>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="card-image">
+          <img src="images/smores.jpeg" alt="S'mores cake in a skillet topped with toasted marshmallows and chocolate drizzle">
+        </div>
+        <p class="card-eyebrow">Dessert</p>
+        <h3>S'mores Cake</h3>
+        <div class="card-meta">
+          <span>⏱ 50–60 min</span>
+          <span>Level: Medium</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-heading">
+        <p class="eyebrow">Our Story</p>
+        <h2>About</h2>
+      </div>
+      <div class="about-content">
+        <p class="about-lead">ABOUT US</p>
+        <p>
+          Simple Recipes is your ultimate destination for easy-to-follow recipes
+          that make cooking enjoyable for everyone, whether you're a seasoned
+          chef or a beginner. Founded in the United States out of a passion for
+          home cooking, our mission is to inspire and empower you to create
+          delicious meals with everyday ingredients and simple techniques.
+        </p>
+        <p>
+          We offer a wide range of diverse cuisines, from classic comfort foods
+          to international dishes, all accompanied by step-by-step instructions
+          and helpful tips to ensure your cooking experience is smooth and
+          successful. Our dedicated team of home cooks and food enthusiasts
+          meticulously test each recipe, so you can cook with confidence.
+        </p>
+        <p>
+          At Simple Recipes, we believe that good food brings people together,
+          and we're excited to have you join our community. Let's cook up
+          something amazing together!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-text">
+        <p class="eyebrow">Get In Touch</p>
+        <h2>Say Hello</h2>
+        <p class="section-sub light">
+          Got a question, a recipe request, or a kitchen win to share? We'd love to hear from you.
+        </p>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Simple Recipes. Made with a full stomach and a well-worn skillet.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
